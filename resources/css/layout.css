@@ -1,0 +1,62 @@
+﻿body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    background-color: #111;
+    background-size: cover;
+    background-position: center;
+}
+
+hr {
+    border-color: #777;
+}
+
+#footer {
+    text-align: center;
+}
+
+.hddn {
+    display: none;
+}
+
+.moviePlot {
+    text-align: justify;
+    font-size: 100%;
+}
+
+.movieTitle {
+   text-shadow: 1px 1px 1px black;
+   color: #44f;
+}
+
+.movieStaff {
+    text-align: justify;
+    font-weight: normal;
+}
+
+.moviePosition {
+    font-weight: bold;
+}
+
+.movieScreenings {
+    text-shadow: 1px 1px 1px black;
+    color: #5c5;
+}
+
+.textIndent {
+    text-indent: 5%;
+}
+
+.cellPadding {
+    padding: 5px;
+}
+
+.logo {
+  font-weight: bold;
+  font-family: serif;
+  color: #279;
+  font-size: 500%;
+}
+
+li {
+    margin: 3px 0px;
+}

@@ -1,0 +1,111 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_hpmciziv" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>StarCinema</title>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <!-- Personal CSS File -->
+    <link rel="stylesheet" href="resources/css/layout.css" />
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <br />
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xs-6">
+                    <h1 class="logo">StarCinema</h1>
+                </div>
+
+                <div class="col-xs-6">
+                    <div class="btn-group pull-right">
+                        <asp:Button ID="logIn" runat="server" CssClass="btn btn-primary" Text="Log In"></asp:Button>
+                        <asp:Button ID="signUp" runat="server" CssClass="btn btn-primary" Text="Sign Up"></asp:Button>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="row">
+
+                <div class="col-xs-12">
+
+                    <nav class="navbar navbar-inverse">
+                        <div class="container">
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="/Default.aspx"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+                                    <li><a href="/Movies.aspx">MOVIES</a></li>
+                                    <li><a href="/About.aspx">ABOUT US</a></li>
+                                    <li><a href="/Contact.aspx">CONTACT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+
+
+            </div>
+
+            <br />
+
+
+
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-xs-12 well">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            <!-- Content to be filled. -->
+                        </asp:ContentPlaceHolder>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <br />
+
+
+            <div class="container-fluid">
+                <div id="footer" class="row">
+
+                    <div class="col-xs-12 well">
+                        Copyright® FINKI-IT, 2016.
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
